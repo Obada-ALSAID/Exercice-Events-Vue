@@ -26,7 +26,7 @@
 
 <template>
   <div class="events">
-    <EventCard />
+    <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
 
