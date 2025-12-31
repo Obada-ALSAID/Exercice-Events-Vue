@@ -1,9 +1,10 @@
 <script setup>
-  const event = {
-    time: '18:00',
-    date: '2025-12-10',
-    title: 'Soirée jeux de société',
-  }
+  const props = defineProps({
+    event: {
+      type: Object,
+      required: true,
+    },
+  })
 </script>
 
 <template>
