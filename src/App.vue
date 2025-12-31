@@ -6,9 +6,9 @@
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/">Evénements</RouterLink>
         <span> | </span>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/about">A propos</RouterLink>
       </nav>
     </div>
   </header>
