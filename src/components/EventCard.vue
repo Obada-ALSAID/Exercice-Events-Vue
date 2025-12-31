@@ -1,10 +1,15 @@
 <script setup>
-
+  const event = {
+    time: '18:00',
+    date: '2025-12-10',
+    title: 'Soirée jeux de société',
+  }
 </script>
 
 <template>
   <div class="event-card">
-
+    <span>{{ event.date }} à {{ event.time }}</span>
+    <h4>{{ event.title }}</h4>
   </div>
 </template>
 
