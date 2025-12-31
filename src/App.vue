@@ -7,6 +7,7 @@
     <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <span> | </span>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
@@ -16,16 +17,11 @@
 </template>
 
 <style scoped>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-  }
-
   nav {
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   nav a {
