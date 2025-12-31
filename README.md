@@ -1,44 +1,69 @@
-# events-app
+# Exercice — Vue 3 (Events)
 
-This template should help get you started developing with Vue 3 in Vite.
+## Objectif
 
-## Recommended IDE Setup
+Développer une application Vue 3 affichant une liste d’événements.
+L’exercice permet de pratiquer :
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Composition API
+- le découpage en composants
+- le routage avec Vue Router
+- l’appel d’une API externe avec Axios
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Technologies
 
-## Customize configuration
+- Vue 3
+- Vite
+- Composition API
+- Vue Router 4
+- Axios
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## Installation
 
-```sh
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Application disponible sur : http://localhost:5173
 
-```sh
-npm run build
+---
+
+## Structure principale
+
+```
+src/
+├── App.vue
+├── main.js
+├── router/index.js
+├── components/
+│   └── EventCard.vue
+├── views/
+│   ├── EventList.vue
+│   └── AboutView.vue
+└── services/
+    └── EventService.js
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+---
 
-```sh
-npm run lint
-```
+## Fonctionnement
+
+- `EventList.vue` affiche la liste des événements
+- `EventCard.vue` affiche un événement via une `props`
+- `EventService.js` récupère les données depuis une API JSON
+- `router/index.js` gère la navigation (Événements / À propos)
+
+---
+
+## Concepts abordés
+
+- `ref`, `onMounted`
+- `defineProps`
+- `v-for`
+- Vue Router
+- Appels API avec Axios
